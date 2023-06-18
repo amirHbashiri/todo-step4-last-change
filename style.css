@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  background: url('image2.jpg') center center/cover;  
+}
+
 .main {
   display: grid;
   grid-template-areas:
@@ -16,9 +20,10 @@
 }
 
 .container {
-  margin-top: 10px;
+  margin-top: 50px;
   grid-area: cont;
   display: flex;
+  background: url('image1.jpg') center center/cover;
   flex-direction: column;
   background-color: blue;
   height: 500px;
@@ -32,22 +37,36 @@
   align-items: center;
 }
 
+ .title {
+  grid-area: title;
+  width: 100%;
+  height: 50px;
+  background: black;
+  color: white;
+  display: flex;
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
 input {
   height: 50px;
   width: 300px;
   margin-right: 10px;
+  border-radius: 10px;
 }
 
 button {
   height: 50px;
   width: 90px;
+  border-radius: 15px 0px;
 }
 
 ul {
   margin-top: 10px;
   min-height: 435px;
   width: 400px;
-  background-color: black;
+  background-color: rgba(29, 29, 29, 0.419);
   overflow-y: auto;
   list-style: none;
 }
@@ -93,7 +112,7 @@ li {
 }
 
 .buttons {
-  background-color: aqua;
+
   display: flex;
   flex-direction: row;
   width: 500px;

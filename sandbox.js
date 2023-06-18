@@ -70,3 +70,13 @@ list.addEventListener("click", (e) => {
     e.target.parentElement.parentElement.remove();
   }
 });
+
+list.addEventListener("click", (e) => {
+  if (e.target.classList.contains("editbtn")) {
+    if (e.target.parentElement.previousElementSibling.contentEditable !== "true") {
+      e.target.parentElement.previousElementSibling.contentEditable = "true";
+    } else {
+      e.target.parentElement.previousElementSibling.contentEditable = "false";
+    }
+  }
+});
